@@ -1,0 +1,35 @@
+#!/bin/sh
+
+lock() {
+    i3lock --color=000000
+}
+
+scrotlock() {
+    scrot /tmp/screenshot.png && convert /tmp/screenshot.png -blur 0x5 /tmp/screenshotblur.png && i3lock -i /tmp/screenshotblur.png
+}
+
+case "$1" in
+    lock)
+        scrotlock
+        ;;
+    logout)
+        i3-msg exit
+        ;;
+    suspend)
+        lock && systemctl suspend
+        ;;
+    hibernate)
+        lock && systemctl hibernate
+        ;;
+    reboot)
+        reboot
+        ;;
+    shutdown)
+        poweroff
+        ;;
+    *)
+        echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
+        exit 2
+esac
+
+exit 0

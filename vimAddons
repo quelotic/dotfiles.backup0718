@@ -1,0 +1,10 @@
+pathogen
+nerdtree
+syntastic
+vim-airline
+vim-airline-themes
+vim-fugitive
+vim-gitgutter
+vim-multiple-cursors
+vim-surround
+YouCompleteMe

@@ -1,0 +1,14 @@
+! You may want to run $ xrdb -merge ~/.Xresources with each update
+
+#include ".Xresources.d/xft.x"
+#include ".Xresources.d/rofi.x"
+#include ".Xresources.d/urxvt.x"
+
+!#include ".Xresources.d/londonTubeTheme.x"
+!#include ".Xresources.d/greenscreenTheme.x"
+!#include ".Xresources.d/defaultTheme.x"
+!#include ".Xresources.d/tomorrowNightTheme.x"
+!#include ".Xresources.d/irBlackTheme.x"
+!#include ".Xresources.d/gothamTheme.x"
+!#include ".Xresources.d/monokaiTheme.x"
+#include ".Xresources.d/xTermMolokai.x"
